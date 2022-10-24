@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">   
+<script src="https://kit.fontawesome.com/7a9e3c5de1.js" crossorigin="anonymous"></script>    
+
+<title></title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+        </header>
+        
+        <div class="calculadora">
+            <div id="titulo">
+                <h1> Calculadora de Taxa Metabólica Basal</h1>
+            </div>
+            <div class ="dados">
+                <label for="Genero">Gênero</label>
+	                <select id="genero">
+		            <option value="feminino">Feminino</option>
+		            <option value="masculino">Masculino</option>
+                    </select> <br>
+                </div>
+
+                <div class ="dados">
+                    <label for="taxa">Taxa de Atividade</label>
+	                <select id="taxa">
+		            <option value="sedentario">Sedentário</option>
+		            <option value="levemente ativo">Levemente ativo</option>
+		            <option value="moderadamente ativo">Moderadamente ativo</option>
+                    <option value="altamente ativo">Altamente ativo</option>
+                    <option value="extremamente ativo">Extremamente ativo</option>
+                    </select> <br>
+                    </div>
+        
+                <div class ="dados">
+                    <label for="peso">Peso (Kg):</label>
+                    <input type="number" id="peso"><br>
+                </div>
+                
+                <div class ="dados">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="number" id="altura"><br>
+                </div>
+                
+                <div class ="dados">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade"><br>
+                </div>
+           
+                <div class ="dados">
+                    <div id="resultado"></div>
+                    <button onclick = "calculate()">Calcular</button>
+                    <textarea name = "" id="text-area" cols = "30" rows = "6"> </textarea>
+                </div>          
+        </div> 
+        <script src="stilo.js"></script>
+    </body>
+</html>

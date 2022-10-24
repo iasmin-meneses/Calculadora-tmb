@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;/*O box-sizing com o valor border-box faz com que 
+    o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura.*/
+    
+}
+
+.calculadora{
+    padding: em;
+    background-color:chocolate;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px black;
+   
+}
+
+#titulo{
+    font-size:1em;
+    padding: 3%;
+}
+
+.dados{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+input,
+select
+{
+    box-shadow: 1px 1px 0px black;
+    border-radius: 2px;
+    background-color: rgb(222, 215, 215);
+   width: 150px;
+   height: 30px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    font-family: inherit;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px black;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+textarea{
+    margin-top: 1em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: rgb(222, 215, 215);
+    box-shadow: 2px 2px 0px black;
+    margin-bottom: 1em;
+}
